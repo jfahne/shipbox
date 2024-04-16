@@ -145,7 +145,7 @@ func simpleHandler(w http.ResponseWriter, req *http.Request) {
 	_, err = conn.Exec(DROP_TEST_TABLE)
 }
 
-func main() {
-	http.HandleFunc("/", simpleHandler)
-	fmt.Fprintf(os.Stderr, "%v\n", http.ListenAndServe(":8080", nil))
-}
+//func main() {
+//	http.HandleFunc("/", simpleHandler)
+//	fmt.Fprintf(os.Stderr, "%v\n", http.ListenAndServe(":8080", nil))
+//}
